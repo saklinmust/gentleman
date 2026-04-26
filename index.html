@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Coding Rokster Portfolio Website | HTML , CSS , JavaScript , Phosphor Icons.
+    </title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="styles/services.css" />
+    <link rel="stylesheet" href="styles/about.css" />
+    <link rel="stylesheet" href="styles/projects.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <div class="brand-info">
+                <img src="assets/logo.png" alt="Coding Rokster" loading="lazy" title="Coding Rokster" />
+                <h2>Portfolio</h2>
+            </div>
+
+            <div class="menu-area">
+                <input type="checkbox" id="menu-toggle" hidden />
+
+                <label for="menu-toggle" class="menu-icon">
+            <i class="ph ph-list"></i>
+          </label>
+
+                <label for="menu-toggle" id="overlay"></label>
+
+                <nav>
+                    <a href="#" style="--i: 1" data-tab="home" class="navlink active">Home</a
+            >
+            <a href="#" style="--i: 2" data-tab="services" class="navlink"
+              >Services</a
+            >
+            <a href="#" style="--i: 2" data-tab="about" class="navlink"
+              >About</a
+            >
+            <a href="#" style="--i: 3" data-tab="projects" class="navlink"
+              >Projects</a
+            >
+            <a href="#" style="--i: 4" data-tab="contact" class="navlink"
+              >Contact</a
+            >
+          </nav>
+        </div>
+      </header>
+
+      <section id="home" class="content active">
+        <div class="details">
+          <h2><span>Coding</span> Rockstar</h2>
+          <h3>
+            I`m
+            <span id="typing-span"></span>
+          </h3>
+          <p>
+            Hi, I’m Saklin Mustak, the creator of Coding Rokster — a platform
+            where I share practical coding tutorials, real-world projects, and
+            developer tips to help you master web development.
+          </p>
+          <div class="bottom">
+            <a
+              href="https://drive.google.com/file/d/1vNac-h9pkGdqwFqHMetGhU7EfavXrD17/view?usp=drivesdk"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+              ><button class="btn">Download CV</button></a
+            >
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/coding-tiger/">
+                <i class="ph ph-linkedin-logo"></i>
+              </a>
+                    <a href="https://www.youtube.com/@Codingrockstar45">
+                <i class="ph ph-youtube-logo"></i>
+              </a>
+                    <a href="https://github.com/saklinmust">
+                <i class="ph ph-github-logo"></i>
+              </a>
+                    <a href="https://www.instagram.com/saklin_459?igsh=eXR6ZGdiZjVlaTk2">
+                <i class="ph ph-instagram-logo"></i>
+              </a>
+            </div>
+    </div>
+    </div>
+
+    <div class="img-container">
+        <img src="assets/profile.jpg" alt="Profile Picture" title="Profile Picture" loading="lazy" />
+    </div>
+    </section>
+
+    <section id="services" class="content">
+        <h2>My <span>Services</span></h2>
+        <div class="service-list"></div>
+    </section>
+
+    <section id="about" class="content">
+        <div class="sidebar">
+            <h3>Why Hire Me ?</h3>
+            <p>
+                I’m a passionate and experienced MERN stack developer who simplifies complex concepts. I deliver quality mentorship, clear teaching, and reliable websites tailored to client needs with full dedication and care.
+            </p>
+
+            <div class="tabs">
+                <span data-section="experience" class="tab active">Experience</span>
+                <span data-section="education" class="tab">Education</span>
+                <span data-section="skills" class="tab">Skills</span>
+                <span data-section="about-me" class="tab">About Me</span>
+            </div>
+        </div>
+
+        <aside id="experience" class="tab-content active">
+            <h2>My <span>Experience</span></h2>
+            <p>
+                Here are some of my professional experiences that showcase my journey, skills, and dedication in web development and collaboration.
+            </p>
+            <div class="experience-list"></div>
+        </aside>
+
+        <aside id="education" class="tab-content">
+            <h2>My <span>Education</span></h2>
+            <p>
+                Here are my educational qualifications that have built a strong foundation in technology, problem-solving, and continuous learning in web development.
+            </p>
+            <div class="education-list"></div>
+        </aside>
+
+        <aside id="skills" class="tab-content">
+            <h2>My <span>Skills</span></h2>
+            <p>
+                Here are the key skills I’ve mastered through hands-on experience, enabling me to build high-quality, scalable, and responsive web applications.
+            </p>
+            <div class="skill-list"></div>
+        </aside>
+
+        <aside id="about-me" class="tab-content">
+            <h2>About <span>Me</span></h2>
+            <p>
+                I'm a passionate developer dedicated to building impactful digital experiences, blending creativity and code to solve real-world problems efficiently and effectively.
+            </p>
+            <div class="my-info"></div>
+        </aside>
+    </section>
+
+    <section id="projects" class="content">
+        <div class="project">
+            <div class="carousel"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="content">
+        <div class="contact-info">
+            <h2>Let`s Work <span>Together.</span></h2>
+            <p>
+                Sure! Here's a 30-word contact paragraph for your website: "Have a project in mind or just want to say hello? Feel free to reach out anytime. I'm always open to discussing new ideas, collaborations, or opportunities!
+            </p>
+            <div class="contact-media"></div>
+        </div>
+
+        <form action="#" id="contact-form">
+            <fieldset>
+                <legend>
+                    <span>Contact</span> Me !
+                </legend>
+
+                <div class="fields">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required />
+                    </div>
+
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="jogn@gmail.com" required />
+                    </div>
+
+                    <div>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+91 6001175465" required />
+                    </div>
+
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" cols="30" rows="5" placeholder="Hi Coding Rokster ! " required></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn" id="send-msg">
+              Send Message
+            </button>
+            </fieldset>
+        </form>
+    </section>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        // initialize EmailJS with your public key
+        emailjs.init("pH9wh9b8S6x7MMu64");
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <script type="module" src="scripts/script.js" defer></script>
+    <script type="module" src="scripts/about.js" defer></script>
+    <script type="module" src="scripts/project.js" defer></script>
+    <script type="module" src="scripts/contact.js" defer></script>
+</body>
+
+</html>
